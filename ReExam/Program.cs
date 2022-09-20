@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace ReExam
 {
+    /// <summary>
+    /// Главный класс программы
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Начало работы программы
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             string path = "../../CriticalPath.xlsx";
