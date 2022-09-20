@@ -1,7 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using ReExam;
-using System.Collections.Generic;
 
 namespace UnitTestProject1
 {
@@ -13,7 +11,7 @@ namespace UnitTestProject1
         public void PrintCritPath1_4_6_7()
         {
             CriticalPath criticalPath = new CriticalPath();
-            string[,] dataArray = new string[2,3];
+            string[,] dataArray = new string[2, 3];
             int[] expected = { 1, 4, 6, 7 };
             int[] actual = criticalPath.GetCritPath(dataArray);
             Assert.AreEqual(expected.ToString(), actual.ToString());

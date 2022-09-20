@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ReExam
 {
@@ -27,7 +23,7 @@ namespace ReExam
             Console.WriteLine("Кратчайший путь");
             foreach (int i in way)
             {
-                Console.Write(i+" ");
+                Console.Write(i + " ");
             }
         }
     }

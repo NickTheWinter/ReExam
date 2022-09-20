@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace ReExam
@@ -16,7 +15,7 @@ namespace ReExam
             string[,] dataArray = new string[lastCell.Column, lastCell.Row]; // массив значений с листа равен по размеру листу
             for (int i = 0; i < lastCell.Column; i++) //по всем колонкам
                 for (int j = 0; j < lastCell.Row; j++) // по всем строкам
-                    if(ObjWorkSheet.Cells[j + 1, i + 1].Text.ToString() != "" || ObjWorkSheet.Cells[j + 1, i + 1].Text.ToString() != null)
+                    if (ObjWorkSheet.Cells[j + 1, i + 1].Text.ToString() != "" || ObjWorkSheet.Cells[j + 1, i + 1].Text.ToString() != null)
                         dataArray[i, j] = ObjWorkSheet.Cells[j + 1, i + 1].Text.ToString();
             //считываем текст в строку
             ObjWorkBook.Close(false, Type.Missing, Type.Missing); //закрыть не сохраняя

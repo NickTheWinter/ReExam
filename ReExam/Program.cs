@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ReExam
 {
@@ -21,7 +17,7 @@ namespace ReExam
             string path = "../../CriticalPath.xlsx";
             FileReader fileReader = new FileReader();
             CriticalPath criticalPath = new CriticalPath();
-            
+
             //Добавлен класс trace, выводящий содержимое считанного excel файла
             TextWriterTraceListener traceL = new TextWriterTraceListener(System.IO.File.CreateText("../../Output.txt"));
             Debug.Listeners.Add(traceL);
