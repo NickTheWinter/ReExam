@@ -11,10 +11,12 @@ namespace ReExam
     {
         static void Main(string[] args)
         {
-            string path = "./CriticalPath.xlsx";
+            string path = "../../CriticalPath.xlsx";
             FileReader fileReader = new FileReader();
             CriticalPath criticalPath = new CriticalPath();
-            TextWriterTraceListener traceL = new TextWriterTraceListener(System.IO.File.CreateText("Output.txt"));
+            
+            //Добавлен класс trace, выводящий содержимое считанного excel файла
+            TextWriterTraceListener traceL = new TextWriterTraceListener(System.IO.File.CreateText("../../Output.txt"));
             Debug.Listeners.Add(traceL);
             string[,] dataArray = fileReader.ReadFile(path);
             for (int i = 0; i < dataArray.GetLength(0); i++)
